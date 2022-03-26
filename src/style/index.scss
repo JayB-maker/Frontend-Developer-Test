@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=DM+Serif+Display&family=Noto+Serif&family=Nunito+Sans:wght@400;700;800;900&family=Work+Sans:wght@400;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  border: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+:root {
+  --color_bg: #1f1f38;
+  --color_variant: #2c2c6c;
+  --color_active: #4db5ff;
+  --color_white: #ffffff;
+  --color_ash: #cfcfcf;
+
+  --container_lg: 75%;
+  --container_md: 89%;
+  --container_sm: 96%;
+
+  --transition: 400ms;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  font-family: "Work Sans", sans-serif;
+  background: var(--color_bg);
+  color: var(--color_white);
+  line-height: 28.15px;
+  //position: relative;
+  background-image: url(../Assets/ptn.png);
+
+  .container {
+    width: var(--container_lg);
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  section {
+    margin-top: 150px;
+  }
+
+  h1 {
+    font-size: 50px;
+    font-weight: 700;
+    color: var(--color_white);
+    line-height: 50px;
+  }
+
+  h5 {
+    font-size: 25px;
+    font-weight: 400;
+    color: var(--color_active);
+    line-height: 47px;
+  }
+
+  small {
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--color_white);
+    line-height: 28.15px;
+  }
+
+  /*a.active {
+    color: var(--color_active);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28.15;
+    transition: var(--transition);
+
+    &:hover {
+      color: var(--color_white);
+    }
+  }
+
+  a.non_active {
+    color: var(--color_white);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28.15;
+    transition: var(--transition);
+
+    &:hover {
+      color: var(--color_active);
+    }
+  } */
+}
+
+/*================= TABLET MEDIA QUERIES================*/
+@media screen and (max-width: 1024px) {
+  .container {
+    width: var(--container_md);
+    margin: 0 auto;
+  }
+
+  section {
+    margin-top: 70px;
+  }
+}
+
+/*================= MOBILE MEDIA QUERIES================*/
+@media screen and (max-width: 600px) {
+  .container {
+    width: var(--container_sm);
+    margin: 0 auto;
+  }
+
+  section {
+    margin-top: 50px;
+  }
+}

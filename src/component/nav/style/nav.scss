@@ -1,0 +1,28 @@
+nav.containersp {
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 20px;
+  display: block;
+  width: max-content;
+  position: fixed;
+  z-index: 999;
+  padding: 15px 25px;
+  left: 50%;
+  transform: translateX(-50%);
+  //position: absolute;
+  bottom: 20px;
+  display: flex;
+  gap: 20px;
+
+  a {
+    color: var(--color_active);
+    background: rgba(0, 0, 0, 0.5);
+    padding: 4px 8px;
+    border-radius: 60em;
+    font-size: 18px;
+    transition: var(--transition);
+
+    &:hover {
+      color: var(--white);
+    }
+  }
+}
