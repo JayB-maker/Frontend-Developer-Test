@@ -1,0 +1,33 @@
+.celebrated-techies{
+    position: relative;
+
+    .container{
+        padding-top: 80px;
+        padding-bottom: 35px;
+        display: flex;
+        place-items: space-between;
+        gap: 40px;
+
+        .info{
+            flex: 1;
+        }
+
+        .img-gallery{
+            flex: 1;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+
+            img{
+                width: 290px;
+            }
+        }
+    }
+
+    .arc{
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 10%;
+    }
+}

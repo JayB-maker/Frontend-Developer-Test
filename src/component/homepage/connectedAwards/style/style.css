@@ -1,1 +1,26 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+.connected-award {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  position: relative;
+}
+
+.connected-award .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 107px;
+}
+
+.connected-award .container img {
+  width: 40%;
+}
+
+.connected-award .arc {
+  position: absolute;
+  -webkit-transform: rotate(270deg);
+          transform: rotate(270deg);
+  width: 10%;
+  right: 0;
+  bottom: 0;
+}
+/*# sourceMappingURL=style.css.map */

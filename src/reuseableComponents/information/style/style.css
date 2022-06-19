@@ -1,0 +1,32 @@
+.information {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 375px;
+  text-align: left;
+}
+
+.information .line {
+  content: "";
+  background: var(--color_accent);
+  width: 88px;
+  height: 4px;
+  border-radius: 6px;
+  margin-top: 8px;
+}
+
+.information p {
+  margin-top: 24px;
+}
+
+.information button {
+  margin-top: 32px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+/*# sourceMappingURL=style.css.map */

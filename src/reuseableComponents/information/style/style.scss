@@ -1,0 +1,25 @@
+.information{
+    display: flex;
+    flex-direction: column;
+    width: 375px;
+    text-align: left;
+
+    .line{
+        content: "";
+        background: var(--color_accent);
+        width: 88px;
+        height: 4px;
+        border-radius: 6px;
+        margin-top: 8px;
+    }
+
+    p{
+        margin-top: 24px;
+    }
+    
+    button{
+        margin-top: 32px;
+        width: fit-content;
+    }
+
+}

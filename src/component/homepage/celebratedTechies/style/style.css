@@ -1,0 +1,42 @@
+.celebrated-techies {
+  position: relative;
+}
+
+.celebrated-techies .container {
+  padding-top: 80px;
+  padding-bottom: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-items: space-between;
+  gap: 40px;
+}
+
+.celebrated-techies .container .info {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.celebrated-techies .container .img-gallery {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.celebrated-techies .container .img-gallery img {
+  width: 290px;
+}
+
+.celebrated-techies .arc {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 10%;
+}
+/*# sourceMappingURL=style.css.map */
