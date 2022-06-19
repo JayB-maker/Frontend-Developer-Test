@@ -38,3 +38,44 @@ export const talentDetails = [{
     subject: "Exeptional Talent",
     details: "Promising Talent is an individual with less than 5 years experience in Nigeria technology ecosystem. Such individual are well recognized in their field for impacting with their skills.",
 }, ]
+
+export const footerDetails =[{
+    heading: "About",
+    links: [{
+        placeholder: "The Connected Magazine",
+        address: "#",
+    }, {
+        placeholder: "Past Editions",
+        address: "#",
+    }, {
+        placeholder: "Celebrated Techies",
+        address: "#",
+    }, ]
+}, {
+    heading: "Legal",
+    links: [{
+        placeholder: "Terms of Service",
+        address: "#",
+    }, {
+        placeholder: "Privacy Policy",
+        address: "#",
+    },]
+}, {
+    heading: "Social",
+    links: [{
+        placeholder: "Linkedin",
+        address: "#",
+    },]
+}, {
+    heading: "Contact",
+    links: [{
+        placeholder: "+2347057219951",
+        address: "#",
+    }, {
+        placeholder: "Chat on Whatsapp",
+        address: "#",
+    }, {
+        placeholder: "connectedawards@gmail.com",
+        address: "#",
+    }, ]
+}, ]

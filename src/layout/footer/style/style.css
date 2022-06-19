@@ -1,0 +1,85 @@
+footer {
+  background-color: #1F0231;
+  background-image: url(../../../Assets/background2.png);
+  height: 650px;
+  background-repeat: no-repeat;
+  background-position: 100%;
+}
+
+footer .container {
+  padding-top: 80px;
+  text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+footer .container .grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(180px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 60px;
+}
+
+footer .container .grid .flexone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 24px;
+}
+
+footer .container .grid .flexone p {
+  color: var(--color_accent);
+  font-size: 16;
+  font-weight: 600;
+  line-height: 19.2px;
+}
+
+footer .container .grid .flexone .flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 24px;
+}
+
+footer .container .grid .flexone .flex a {
+  color: var(--color_white);
+  font-size: 16;
+  font-weight: 400;
+  line-height: 19.2px;
+}
+
+footer .container .logo img {
+  width: 13%;
+  margin-top: 118px;
+}
+
+footer .container .copyright {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  place-content: space-between;
+}
+
+footer .container .copyright p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.2px;
+  color: var(--color_white);
+}
+/*# sourceMappingURL=style.css.map */
