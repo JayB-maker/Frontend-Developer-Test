@@ -1,0 +1,21 @@
+header{
+    padding: 16px 0;
+    display: flex;
+    place-content: space-between;
+    align-items: center;
+
+    ul{
+        display: flex;
+        gap: 64px;
+
+        a{
+            font-size: 16px;
+            font-weight: 400;
+        }
+    }
+
+    .cta{
+        display: flex;
+        gap: 32px;
+    }
+}

@@ -1,0 +1,54 @@
+.hero{
+    padding-top: 67px;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    padding-bottom: 140px;
+
+    .search{
+        display: flex;
+        margin: 0 auto;
+        gap: 20PX;
+
+        .search-box{
+            position: relative;
+            padding: 21px 24.4px;
+            border: 1px solid var(--color_ash);
+            border-radius: 4px;
+            width: 40vw;
+            height: 64px;
+
+            input{
+                position: absolute;
+                left: 72px;
+                width: 90%;
+            }
+
+            img{
+                margin-top: 2px;
+                width: 2.5%;
+                position: absolute;
+                left: 24px;
+            }
+        }
+
+        button{
+            padding: 21px 51px;
+        }
+    }
+
+    a{
+        display: flex;
+        gap: 10px;
+        margin: 0 auto;
+
+        h6{
+            font-size: 18px;
+            font-weight: 300;
+        }
+
+        img{
+            width: 10%;
+        }
+    }
+}

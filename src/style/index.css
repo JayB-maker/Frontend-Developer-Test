@@ -1,4 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=DM+Serif+Display&family=Noto+Serif&family=Nunito+Sans:wght@400;700;800;900&family=Work+Sans:wght@400;600;700&display=swap");
+@font-face {
+  font-family: 'Pulp Display';
+  src: url("../font/PulpDisplay-Regular.ttf");
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -11,13 +15,13 @@
 }
 
 :root {
-  --color_bg: #1f1f38;
-  --color_variant: #2c2c6c;
-  --color_active: #4db5ff;
+  --color_primary: #3E0563;
+  --color_black: #0C0114;
+  --color_accent: #FA9706;
   --color_white: #ffffff;
-  --color_ash: #cfcfcf;
-  --container_lg: 75%;
-  --container_md: 89%;
+  --color_ash: #EEE8F2;
+  --container_lg: 89%;
+  --container_md: 92%;
   --container_sm: 96%;
   --transition: 400ms;
 }
@@ -31,34 +35,10 @@ html {
 }
 
 body {
-  font-family: "Work Sans", sans-serif;
-  background: var(--color_bg);
-  color: var(--color_white);
+  font-family: "pulp Display";
+  background: var(--color_white);
+  color: var(--color_black);
   line-height: 28.15px;
-  background-image: url(../Assets/ptn.png);
-  /*a.active {
-    color: var(--color_active);
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 28.15;
-    transition: var(--transition);
-
-    &:hover {
-      color: var(--color_white);
-    }
-  }
-
-  a.non_active {
-    color: var(--color_white);
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 28.15;
-    transition: var(--transition);
-
-    &:hover {
-      color: var(--color_active);
-    }
-  } */
 }
 
 body .container {
@@ -72,24 +52,107 @@ body section {
 }
 
 body h1 {
-  font-size: 50px;
-  font-weight: 700;
+  font-size: 96px;
+  line-height: 115.2px;
+  font-weight: 400;
+  color: var(--color_black);
+}
+
+body h3 {
+  font-size: 48px;
+  line-height: 57.6px;
+  font-weight: 400;
   color: var(--color_white);
-  line-height: 50px;
+}
+
+body h4 {
+  font-size: 36px;
+  font-weight: 600;
+  color: var(--color_black);
+  line-height: 43.2px;
 }
 
 body h5 {
-  font-size: 25px;
-  font-weight: 400;
-  color: var(--color_active);
-  line-height: 47px;
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--color_white);
+  line-height: 28.8px;
 }
 
-body small {
+body p {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--color_black);
+  line-height: 24px;
+}
+
+body img {
+  width: 100%;
+}
+
+body .btn-primary {
+  color: var(--color_white);
+  background-color: var(--color_primary);
+  padding: 16px 24px;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 19.2px;
+  cursor: pointer;
+  -webkit-transition: var(--transition);
+  transition: var(--transition);
+}
+
+body .btn-primary:hover {
+  opacity: 0.95;
+}
+
+body .btn-secondary {
+  color: var(--color_primary);
+  background-color: var(--color_ash);
+  padding: 16px 24px;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 19.2px;
+  cursor: pointer;
+  -webkit-transition: var(--transition);
+  transition: var(--transition);
+}
+
+body .btn-secondary:hover {
+  opacity: 0.95;
+}
+
+body a {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 21.6px;
+  color: var(--color_black);
+}
+
+body input {
+  color: var(--color_black);
   font-size: 18px;
   font-weight: 400;
-  color: var(--color_white);
-  line-height: 28.15px;
+  line-height: 21.6px;
+  background-color: transparent;
+}
+
+body input::-webkit-input-placeholder {
+  color: var(--color_ash);
+}
+
+body input:-ms-input-placeholder {
+  color: var(--color_ash);
+}
+
+body input::-ms-input-placeholder {
+  color: var(--color_ash);
+}
+
+body input::placeholder {
+  color: var(--color_ash);
 }
 
 /*================= TABLET MEDIA QUERIES================*/
@@ -108,6 +171,14 @@ body small {
   .container {
     width: var(--container_sm);
     margin: 0 auto;
+  }
+  h1 {
+    font-size: 64px;
+    line-height: 76.8px;
+  }
+  h4 {
+    font-size: 32px;
+    line-height: 38.4px;
   }
   section {
     margin-top: 50px;
