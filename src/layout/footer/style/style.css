@@ -42,6 +42,7 @@ footer .container .grid .flexone p {
   font-size: 16;
   font-weight: 600;
   line-height: 19.2px;
+  text-align: left;
 }
 
 footer .container .grid .flexone .flex {
@@ -60,11 +61,13 @@ footer .container .grid .flexone .flex a {
   font-size: 16;
   font-weight: 400;
   line-height: 19.2px;
+  text-align: left;
 }
 
 footer .container .logo img {
   width: 13%;
   margin-top: 118px;
+  float: left;
 }
 
 footer .container .copyright {
@@ -81,5 +84,60 @@ footer .container .copyright p {
   font-weight: 400;
   line-height: 19.2px;
   color: var(--color_white);
+}
+
+@media screen and (max-width: 1024px) {
+  footer {
+    height: 100%;
+    padding-bottom: 100px;
+  }
+  footer .container .grid {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  footer {
+    height: 100%;
+  }
+  footer .container .grid {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  footer .container .grid .flexone p {
+    text-align: center;
+  }
+  footer .container .grid .flexone .flex a {
+    text-align: center;
+  }
+  footer .container .logo {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  footer .container .logo img {
+    width: 30%;
+    margin-top: 100px;
+  }
+  footer .copyright {
+    margin-top: 30px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 30px;
+  }
+  footer .copyright p {
+    line-height: 30px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

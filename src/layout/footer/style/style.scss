@@ -26,6 +26,7 @@ footer{
                     font-size: 16;
                     font-weight: 600;
                     line-height: 19.2px;
+                    text-align: left;
                 }
 
                 .flex{
@@ -38,6 +39,7 @@ footer{
                         font-size: 16;
                         font-weight: 400;
                         line-height: 19.2px;
+                        text-align: left;
                     }
                 }
             }
@@ -47,6 +49,7 @@ footer{
             img{
                 width: 13%;
                 margin-top: 118px;
+                float: left;
             }
         }
 
@@ -70,12 +73,59 @@ footer{
 
 @media screen and (max-width: 1024px){
     footer{
-    }
+        height: 100%;
+        padding-bottom: 100px;
 
+        .container{
+            .grid{
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+    }
+    
 }
 
 @media screen and (max-width: 600px){
     footer{
+        height: 100%;
+        
+        .container{
+            .grid{
+                grid-template-columns: 1fr;
+                .flexone{
+                    p{
+                        text-align: center;
+                    }
+                    .flex{
+                        a{
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+
+            .logo{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                img{
+                    width: 30%;
+                    margin-top: 100px;
+                }
+            }
+        }
+
+
+        .copyright{
+            margin-top: 30px;
+            flex-direction: column;
+            gap: 30px;
+
+            p{
+                line-height: 30px;
+            }
+        }
     }
 
 }

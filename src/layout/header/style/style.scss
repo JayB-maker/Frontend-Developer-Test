@@ -1,4 +1,5 @@
-header.container{
+header{
+.container{
     background-color: var(--color_white);
     padding: 16px 0;
     display: flex;
@@ -30,18 +31,23 @@ header.container{
             display: flex;
             gap: 32px;
         }
+    }
     
 }
 
 @media screen and (max-width: 1024px){
-    header.container{
+    header{
+        // height: 100vh;
+            position: fixed;
+            width: 100vw;
+            background-color: var(--color_white);
+            z-index: 10;    
+            // right: 50%;
+            // transform: translateX(50%);
+    .container{
             justify-content: space-between;
             align-items: flex-start;
             flex-direction: column;
-            position: fixed;
-            z-index: 10;    
-            right: 50%;
-            transform: translateX(50%);
 
             .logo{
                 display: flex;
@@ -63,7 +69,7 @@ header.container{
                 border-top: 1px solid var(--color_black);
                 background-color: var(--color_white);
                 flex-direction: column;
-                height: 50vh;
+                height: 90vh;
                 margin-top: 20px;
                 width: 100%;
                 gap: 15px;
@@ -107,5 +113,6 @@ header.container{
                 }
             }
         }
+    }
     
 }

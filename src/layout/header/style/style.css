@@ -1,4 +1,4 @@
-header.container {
+header .container {
   background-color: var(--color_white);
   padding: 16px 0;
   display: -webkit-box;
@@ -10,11 +10,11 @@ header.container {
           align-items: center;
 }
 
-header.container .logo .mobile {
+header .container .logo .mobile {
   display: none;
 }
 
-header.container nav {
+header .container nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -24,19 +24,19 @@ header.container nav {
   gap: 100px;
 }
 
-header.container ul {
+header .container ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 64px;
 }
 
-header.container ul a {
+header .container ul a {
   font-size: 16px;
   font-weight: 400;
 }
 
-header.container .cta {
+header .container .cta {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -44,7 +44,13 @@ header.container .cta {
 }
 
 @media screen and (max-width: 1024px) {
-  header.container {
+  header {
+    position: fixed;
+    width: 100vw;
+    background-color: var(--color_white);
+    z-index: 10;
+  }
+  header .container {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -55,13 +61,8 @@ header.container .cta {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    position: fixed;
-    z-index: 10;
-    right: 50%;
-    -webkit-transform: translateX(50%);
-            transform: translateX(50%);
   }
-  header.container .logo {
+  header .container .logo {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -73,26 +74,26 @@ header.container .cta {
         -ms-flex-align: center;
             align-items: center;
   }
-  header.container .logo .mobile {
+  header .container .logo .mobile {
     width: 5%;
     display: block;
   }
-  header.container nav.hide {
+  header .container nav.hide {
     display: none;
   }
-  header.container nav.show {
+  header .container nav.show {
     border-top: 1px solid var(--color_black);
     background-color: var(--color_white);
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    height: 50vh;
+    height: 90vh;
     margin-top: 20px;
     width: 100%;
     gap: 15px;
   }
-  header.container ul {
+  header .container ul {
     text-align: left;
     width: 100%;
     -webkit-box-orient: vertical;
@@ -101,15 +102,15 @@ header.container .cta {
             flex-direction: column;
     gap: 15px;
   }
-  header.container ul li {
+  header .container ul li {
     border-bottom: 1px solid var(--color_black);
     padding: 15px 0;
   }
-  header.container ul a {
+  header .container ul a {
     width: 100%;
     font-size: 20px;
   }
-  header.container .cta {
+  header .container .cta {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -117,7 +118,7 @@ header.container .cta {
     gap: 15px;
     width: 100%;
   }
-  header.container .cta .btn-primary, header.container .cta .btn-secondary {
+  header .container .cta .btn-primary, header .container .cta .btn-secondary {
     background-color: transparent;
     text-align: left;
     color: var(--color_black);

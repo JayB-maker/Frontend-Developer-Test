@@ -9,7 +9,8 @@ const Header = () => {
   const [clicked, setClicked] = useState(false)
   return (
     <>
-    <header className='container'>
+    <header>
+    <div className='container'>
       <div className="logo">
         <a href="/"><img src={logo} alt="logo" /></a>
         <img className="mobile" onClick={() => setClicked(!clicked)} src={ clicked ? mobileexit : mobilemenu} alt="logo" />
@@ -27,6 +28,7 @@ const Header = () => {
         <button className="btn-primary">Create Account</button>
       </div>
       </nav>
+      </div>
     </header>
     </>
   )
