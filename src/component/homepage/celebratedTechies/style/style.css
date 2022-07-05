@@ -39,4 +39,16 @@
   bottom: 0;
   width: 10%;
 }
+
+@media screen and (max-width: 1024px) {
+  .celebrated-techies {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .celebrated-techies {
+    display: none;
+  }
+}
 /*# sourceMappingURL=style.css.map */

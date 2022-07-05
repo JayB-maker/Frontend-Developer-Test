@@ -52,4 +52,16 @@
 .target .container .features .lists img {
   height: 160px;
 }
+
+@media screen and (max-width: 1024px) {
+  .target {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .target {
+    display: none;
+  }
+}
 /*# sourceMappingURL=style.css.map */

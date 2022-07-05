@@ -22,3 +22,17 @@
         bottom: 0;
     }
 }
+
+@media screen and (max-width: 1024px){
+    .connected-award{
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 600px){
+    .connected-award{
+        display: none;
+    }
+
+}

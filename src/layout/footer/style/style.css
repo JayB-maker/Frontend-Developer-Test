@@ -82,4 +82,16 @@ footer .container .copyright p {
   line-height: 19.2px;
   color: var(--color_white);
 }
+
+@media screen and (max-width: 1024px) {
+  footer {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  footer {
+    display: none;
+  }
+}
 /*# sourceMappingURL=style.css.map */

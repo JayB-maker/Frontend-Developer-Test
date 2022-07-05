@@ -1,21 +1,110 @@
-header{
+header.container{
     padding: 16px 0;
     display: flex;
     place-content: space-between;
     align-items: center;
 
-    ul{
-        display: flex;
-        gap: 64px;
-
-        a{
-            font-size: 16px;
-            font-weight: 400;
+    .logo{
+        .mobile{
+            display: none;
         }
     }
+        nav{
+            display: flex;
+            align-items: center;
+            gap: 100px;
+        }
+    
+        ul{
+            display: flex;
+            gap: 64px;
+    
+            a{
+                font-size: 16px;
+                font-weight: 400;
+            }
+        }
+    
+        .cta{
+            display: flex;
+            gap: 32px;
+        }
+    
+}
 
-    .cta{
-        display: flex;
-        gap: 32px;
-    }
+@media screen and (max-width: 1024px){
+    header.container{
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-direction: column;
+            position: fixed;
+            z-index: 10;    
+            right: 50%;
+            transform: translateX(50%);
+
+            .logo{
+                display: flex;
+                width: 100%;
+                justify-content: space-between;
+                align-items: center;
+                
+                .mobile{
+                    width: 5%;
+                    display: block;
+                }
+            }
+
+            nav.hide{
+                display: none;
+            }
+            
+            nav.show{
+                border-top: 1px solid var(--color_black);
+                background-color: var(--color_white);
+                flex-direction: column;
+                height: 50vh;
+                margin-top: 20px;
+                width: 100%;
+                gap: 15px;
+            }
+
+            ul{
+                text-align: left;
+                width: 100%;
+                flex-direction: column;
+                gap: 15px;
+                
+                li{
+                    border-bottom: 1px solid var(--color_black);
+                    padding: 15px 0;
+                }
+               
+               a{
+                width: 100%;
+                font-size: 20px;
+               }
+            }
+    
+            .cta{
+                flex-direction: column;
+                gap: 15px;
+                width: 100%;
+
+    
+                .btn-primary, .btn-secondary{
+                    background-color: transparent;
+                    text-align: left;
+                    color: var(--color_black);
+                    width: 100%;
+                    font-size: 20px;
+                    padding: 0;
+                    margin: 0;
+                    border-bottom: 1px solid var(--color_black);
+                    padding: 15px 0;
+                    line-height: 30px;
+                    font-weight: 500;
+                }
+            }
+        }
+    
 }

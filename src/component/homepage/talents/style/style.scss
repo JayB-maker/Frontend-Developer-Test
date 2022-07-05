@@ -19,3 +19,17 @@
         }
     }
 }
+
+@media screen and (max-width: 1024px){
+    .talent{
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 600px){
+    .talent{
+        display: none;
+    }
+
+}
