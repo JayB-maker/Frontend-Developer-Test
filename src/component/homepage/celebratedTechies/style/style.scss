@@ -34,14 +34,36 @@
 
 @media screen and (max-width: 1024px){
     .celebrated-techies{
-        display: none;
+        .container{
+            flex-direction: column;
+
+            .info{
+                .information{
+                    width: 100%;
+                }
+            }
+            .img-gallery{
+                width: 100%;
+                img{
+                    width: 100%;
+                }
+
+            }
+        }
     }
 
 }
 
 @media screen and (max-width: 600px){
     .celebrated-techies{
-        display: none;
+        .container{
+            flex-direction: column-reverse;
+
+            .img-gallery{
+                width: 100%;
+                gap: 10px;
+            }
+        }
     }
 
 }

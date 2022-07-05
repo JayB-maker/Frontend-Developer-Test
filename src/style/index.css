@@ -161,6 +161,12 @@ body input::placeholder {
     width: var(--container_md);
     margin: 0 auto;
   }
+  .container h1 {
+    font-size: 60px;
+    line-height: 76.8px;
+    letter-spacing: -0.06em;
+    font-weight: 400;
+  }
   section {
     margin-top: 70px;
   }
@@ -172,9 +178,9 @@ body input::placeholder {
     width: var(--container_sm);
     margin: 0 auto;
   }
-  h1 {
-    font-size: 64px;
-    line-height: 76.8px;
+  .container h5 {
+    font-size: 16px;
+    line-height: 19.2px;
   }
   h4 {
     font-size: 32px;

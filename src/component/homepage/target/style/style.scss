@@ -20,10 +20,11 @@
         }
 
         .features{
-            display: flex;
-            align-items: center;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+            // align-items: center;
             gap: 40px;
-            margin: 0 auto;
+            // margin: 0 auto;
 
             .lists{
                 border: 1px solid var(--color_white);
@@ -42,14 +43,39 @@
 
 @media screen and (max-width: 1024px){
     .target{
-        display: none;
+        height: 100%;
+        padding-bottom: 80px;
+
+        .features{
+            .lists{
+                aspect-ratio: 1;
+                justify-content: center;
+            }
+        }
     }
 
 }
 
 @media screen and (max-width: 600px){
     .target{
-        display: none;
+        .container{
+            gap: 40px;
+            .features{
+                grid-template-columns: 1fr 1fr;
+                width: 100%;
+                gap: 10px;
+
+                .lists{
+                    width: 170px;
+                    height: 170px;
+                    padding: 20px;
+                    align-items: center;
+                    img{
+                        width: 70%;
+                    }
+                }
+            }
+        }
     }
 
 }

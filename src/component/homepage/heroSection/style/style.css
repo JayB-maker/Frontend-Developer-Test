@@ -63,14 +63,29 @@
 }
 
 @media screen and (max-width: 1024px) {
-  .hero {
-    display: none;
+  .hero.container {
+    padding-top: 150px;
+  }
+  .hero.container .search .search-box {
+    width: 60vw;
+  }
+  .hero.container .search .search-box img {
+    width: 5%;
   }
 }
 
 @media screen and (max-width: 600px) {
-  .hero {
-    display: none;
+  .hero.container {
+    padding-top: 120px;
+  }
+  .hero.container .search .search-box input {
+    width: 65%;
+  }
+  .hero.container .search .search-box img {
+    width: 8%;
+  }
+  .hero.container .search button {
+    padding: 20px;
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -25,14 +25,26 @@
 }
 
 @media screen and (max-width: 1024px) {
-  .connected-award {
-    display: none;
+  .connected-award .container {
+    gap: 50px;
+  }
+  .connected-award .container img {
+    width: 60%;
   }
 }
 
 @media screen and (max-width: 600px) {
-  .connected-award {
-    display: none;
+  .connected-award .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .connected-award .container img {
+    width: 100%;
+  }
+  .connected-award .container .information {
+    width: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */

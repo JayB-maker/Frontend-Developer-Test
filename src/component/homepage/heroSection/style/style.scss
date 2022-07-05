@@ -54,15 +54,40 @@
 }
 
 @media screen and (max-width: 1024px){
-    .hero{
-        display: none;
+    .hero.container{
+        padding-top: 150px;
+
+        .search{
+            .search-box{
+                width: 60vw;
+
+                img{
+                    width: 5%;
+                }
+            }
+        }
     }
 
 }
 
 @media screen and (max-width: 600px){
-    .hero{
-        display: none;
+    .hero.container{
+        padding-top: 120px;
+
+        .search{
+            .search-box{
+                input{
+                    width: 65%;
+                }
+                img{
+                    width: 8%;
+                }
+            }
+
+            button{
+                padding: 20px;
+            }
+        }
     }
 
 }

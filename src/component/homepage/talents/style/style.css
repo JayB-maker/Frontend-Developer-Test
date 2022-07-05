@@ -1,9 +1,10 @@
 .talent {
   padding-top: 80px;
   padding-bottom: 80px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 40px;
 }
 
@@ -31,15 +32,10 @@
   width: fit-content;
 }
 
-@media screen and (max-width: 1024px) {
-  .talent {
-    display: none;
-  }
-}
-
 @media screen and (max-width: 600px) {
   .talent {
-    display: none;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
   }
 }
 /*# sourceMappingURL=style.css.map */

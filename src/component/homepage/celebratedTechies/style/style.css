@@ -41,14 +41,33 @@
 }
 
 @media screen and (max-width: 1024px) {
-  .celebrated-techies {
-    display: none;
+  .celebrated-techies .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .celebrated-techies .container .info .information {
+    width: 100%;
+  }
+  .celebrated-techies .container .img-gallery {
+    width: 100%;
+  }
+  .celebrated-techies .container .img-gallery img {
+    width: 100%;
   }
 }
 
 @media screen and (max-width: 600px) {
-  .celebrated-techies {
-    display: none;
+  .celebrated-techies .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .celebrated-techies .container .img-gallery {
+    width: 100%;
+    gap: 10px;
   }
 }
 /*# sourceMappingURL=style.css.map */
